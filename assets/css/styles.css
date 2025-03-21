@@ -3,17 +3,25 @@
     background: url('../images/lol_banner_eportfolio.jpeg') center/cover no-repeat; /* banner url path */
     height: 300px;
     display: flex;
-    flex-direction: column; /* Stacks text vertically */
-    justify-content: center; 
-    align-items: center;
-    text-align: center; Center vertically */
+    flex-direction: column;  /* Stack elements vertically */
+    justify-content: center;
+    align-items: flex-start; /* Align text to the left side */
+    text-align: left;
+    padding-left: 50px; /* Adjust spacing from the left */
 }
 
 /* Style the text overlay */
-.banner-text, .banner p {
+.banner h1 {
     color: white;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    margin: 0 0 10px 0; /* Add spacing below the title */
+}
+
+.banner p {
+    color: white;
+    font-size: 1.5rem;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
     margin: 0;
 }
