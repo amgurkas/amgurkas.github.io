@@ -100,10 +100,12 @@ h1, h2 {
 }
 
 .project-image {
-    max-width: 100%;   /* makes image scale down responsively */
-    height: auto;      /* maintain aspect ratio */
-    border-radius: 8px; /* optional, for rounded corners */
-    margin-top: 10px;  /* some spacing above */
+    display: block;
+    max-width: 90%;          /* image won’t exceed 90% of container */
+    height: auto;            /* keep aspect ratio */
+    margin: 10px auto 0 auto; /* centers image horizontally with margin top */
+    padding: 0 10px;         /* add horizontal padding */
+    border-radius: 8px;      /* slightly rounded corners */
 }
 
 
