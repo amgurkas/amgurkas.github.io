@@ -1,6 +1,5 @@
 .banner {
     position: relative;
-    background: url('../images/lol_banner_eportfolio.jpeg') center/contain no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
