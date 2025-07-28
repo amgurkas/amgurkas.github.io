@@ -102,11 +102,11 @@ h1, h2 {
 }
 
 .project-image {
-    max-width: 75%;
-    height: auto;
-    border-radius: 8px;
-    margin: 10px 0 10px 0; /* top, right, bottom, left */
-    display: block;        /* ensures block-level alignment */
+  max-width: 75%;
+  height: auto;
+  border-radius: 8px;
+  margin: 10px 0 10px 0;  /* top/bottom: 10px, left/right: 0 */
+  padding-left: 10px;     /* (test after posting) add spacing from left */
 }
 
 
