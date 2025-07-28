@@ -1,57 +1,52 @@
-/* Banner wrapper styles */
+/* Banner Formatting*/
 .banner-wrapper {
-  position: relative;             /* Positions children relative to this container */
-  width: 90%;                    /* Match the container width */
-  max-width: 1200px;             /* Limit max width on very wide screens */
-  margin: 20px auto;             /* Vertically 20px margin, horizontally centered */
-  border-radius: 10px;           /* Rounded corners for the banner container */
-  overflow: hidden;              /* Hide overflow to keep border-radius clean */
-  box-sizing: border-box;        /* Includes padding and border in width/height calculations */
+  position: relative;                   /* positioning context */
+  width: 80%;                          /* match container width */
+  max-width: 1200px;                   /* max width */
+  margin: 20px auto;                   /* center horizontally */
+  border-radius: 12px;                 /* rounded corners */
+  overflow: hidden;                    /* clip overflow */
+  box-sizing: border-box;              /* include padding/border in width */
+  background-image: url('../images/lol_banner_eportfolio.jpeg'); /* banner image path */
+  background-repeat: no-repeat;        /* no repeat */
+  background-position: center top;     /* top center */
+  background-size: contain;            /* scale image to fit inside container without cropping */
+  padding-top: 30%;                    /* creates responsive height based on width (adjust %) */
 }
 
-/* Banner image */
-.banner-img {
-  width: 100%;                   /* Image fills the full width of .banner-wrapper */
-  height: 400px;                 /* Fix height to show full image */
-  object-fit: contain;           /* Show entire image within container, no cropping */
-  display: block;                /* Remove default inline spacing */
-  border-radius: 10px;           /* Rounded corners to match container */
-}
-
-/* Banner text container */
+/* Banner text */
 .banner-text {
-  position: absolute;            /* Positioned relative to .banner-wrapper */
-  top: 50%;                     /* Vertically center text */
-  left: 30px;                   /* Left padding inside the banner */
-  transform: translateY(-50%);  /* Perfect vertical centering */
-  color: white !important;      /* Force white text */
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Text shadow for readability */
-  max-width: calc(100% - 60px); /* Prevent text overflow beyond container */
-  box-sizing: border-box;       /* Include padding in width */
+  position: absolute;                  /* overlay text on banner */
+  top: 50%;                           /* vertical center */
+  left: 30px;                        /* left padding */
+  transform: translateY(-50%);       /* vertical alignment */
+  color: white !important;            /* white text */
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6); /* text shadow for readability */
+  max-width: calc(100% - 60px);       /* keep text within container */
+  box-sizing: border-box;
 }
 
 /* Banner heading */
 .banner-text h1 {
-  font-size: 2.5rem;            /* Large heading font size */
-  font-weight: bold;            /* Bold font weight */
-  margin-bottom: 10px;          /* Space below heading */
-  color: white !important;      /* Ensure white text, override h1 default */
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white !important;
 }
 
 /* Banner paragraph */
 .banner-text p {
-  font-size: 1.5rem;            /* Paragraph font size */
-  margin: 0;                    /* Remove default margin */
+  font-size: 1.5rem;
+  margin: 0;
 }
 
-/* Responsive tweaks for smaller screens */
+/* Responsive tweaks */
 @media (max-width: 768px) {
   .banner-text h1 {
-    font-size: 2rem;            /* Slightly smaller heading on mobile */
+    font-size: 2rem;
   }
-
   .banner-text p {
-    font-size: 1.2rem;          /* Slightly smaller paragraph text */
+    font-size: 1.2rem;
   }
 }
 
