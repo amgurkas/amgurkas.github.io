@@ -1,7 +1,7 @@
 .banner {
     position: relative;
     background: url('../images/lol_banner_eportfolio.jpeg') center/cover no-repeat; /* banner url path */
-    height: 300px;
+    height: 350px;
     display: flex;
     flex-direction: column;  /* Stack elements vertically */
     justify-content: center;
