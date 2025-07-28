@@ -1,13 +1,14 @@
 .banner {
     position: relative;
-    background: url('images/lol_banner_eportfolio.jpeg') center center/cover no-repeat;
+    background: url('assets/images/lol_banner_eportfolio.jpeg') center center/cover no-repeat;
     height: 300px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
     padding-left: 50px;
     color: white;
-    text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
 }
 
 .banner h1,
