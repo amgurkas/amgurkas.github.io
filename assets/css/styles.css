@@ -1,6 +1,6 @@
 .banner {
     position: relative;
-    background: url('assets/images/lol_banner_eportfolio.jpeg') center center/cover no-repeat;
+    background: url('../images/lol_banner_eportfolio.jpeg') center center/cover no-repeat; 
     height: 300px; 
     display: flex;
     flex-direction: column;
