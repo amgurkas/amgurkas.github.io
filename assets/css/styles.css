@@ -7,17 +7,15 @@
   border-radius: 12px;           /* Rounded corners for the banner container */
   overflow: hidden;              /* Hide overflow to keep border-radius clean */
   box-sizing: border-box;        /* Includes padding and border in width/height calculations */
-  /* Added box-sizing for consistency */
 }
 
 /* Banner image */
 .banner-img {
   width: 100%;                   /* Image fills the full width of .banner-wrapper */
-  height: auto;                  /* Maintain original aspect ratio */
+  height: 300px;                 /* Fix height to show full image */
+  object-fit: contain;           /* Show entire image within container, no cropping */
   display: block;                /* Remove default inline spacing */
   border-radius: 12px;           /* Rounded corners to match container */
-  object-fit: cover;             /* Cover container without distortion */
-  /* Added to ensure the image fills container properly */
 }
 
 /* Banner text container */
@@ -112,7 +110,7 @@ h1, h2 {
   display: block;             /* Make link a block so it starts on new line */
   color: #007acc;             /* Link color */
   text-decoration: none;      /* Remove underline */
-  margin-top: 15px;           /* Space above link */
+  margin-top: 20px;           /* Space above link to separate from image */
 }
 
 /* Hover effect for links */
