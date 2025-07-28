@@ -56,6 +56,32 @@ h1, h2 {
     margin-bottom: 30px;
 }
 
+/* Project Section */
+.project-card {
+    background-color: #f9f9f9;
+    border-left: 4px solid #80d4ff;
+    padding: 1em;
+    margin-bottom: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.project-card h3 {
+    margin-top: 0;
+    font-size: 1.25em;
+    color: #004466;
+}
+
+.project-card a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+
 /* Buttons */
 .btn {
     display: inline-block;
