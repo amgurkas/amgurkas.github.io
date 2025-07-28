@@ -98,6 +98,13 @@ h1, h2 {
     text-decoration: underline;
 }
 
+.project-image {
+    max-width: 100%;   /* makes image scale down responsively */
+    height: auto;      /* maintain aspect ratio */
+    border-radius: 8px; /* optional, for rounded corners */
+    margin-top: 10px;  /* some spacing above */
+}
+
 
 /* Buttons */
 .btn {
