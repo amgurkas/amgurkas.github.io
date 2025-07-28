@@ -101,9 +101,9 @@ h1, h2 {
 
 .project-image {
     display: block;
-    max-width: 60%;          /* image won’t exceed 75% of container */
+    max-width: 55%;          /* image won’t exceed 75% of container */
     height: auto;            /* keep aspect ratio */
-    margin: 10px auto 0 auto; /* centers image horizontally with margin top */
+    margin: 10px auto 10px auto; /* centers image horizontally top/bottom margin */
     padding: 0 10px;         /* add horizontal padding */
     border-radius: 8px;      /* slightly rounded corners */
 }
