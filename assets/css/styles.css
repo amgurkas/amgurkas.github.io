@@ -1,6 +1,7 @@
 .banner-wrapper {
   position: relative;
-  max-width: 960px;
+  width: 80%;    /* Match .container width */
+  max-width: 1200px;  /* cap to avoid being too large on very wide screens */
   margin: 20px auto;
   border-radius: 12px;
   overflow: hidden;
@@ -18,7 +19,7 @@
   top: 50%;
   left: 30px;
   transform: translateY(-50%);
-  color: white;
+  color: white !important;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
 
@@ -105,7 +106,6 @@ h1, h2 {
   height: auto;
   border-radius: 8px;
   margin: 10px 0 10px 0;  /* top/bottom: 10px, left/right: 0 */
-  padding-left: 10px;     /* (test after posting) add spacing from left */
 }
 
 
