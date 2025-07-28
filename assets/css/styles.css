@@ -1,7 +1,6 @@
 .banner-wrapper {
   position: relative;
   width: 80%;    /* Match .container width */
-  max-width: 1200px;  /* cap to avoid being too large on very wide screens */
   margin: 20px auto;
   border-radius: 12px;
   overflow: hidden;
@@ -27,6 +26,7 @@
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 10px;
+  color: white !important;  /* add this line */
 }
 
 .banner-text p {
