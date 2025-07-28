@@ -1,13 +1,16 @@
 .banner {
     position: relative;
-    background: url('../images/lol_banner_eportfolio.jpeg') center/cover no-repeat; /* banner url path */
-    height: 600px;
+    background: url('../images/lol_banner_eportfolio.jpeg') center/contain no-repeat; /* banner url path */
+    height: auto;
+    min-height: 300px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 50px; /* Adjust spacing from the left */
     display: flex;
     flex-direction: column;  /* Stack elements vertically */
     justify-content: center;
     align-items: flex-start; /* Align text to the left side */
     text-align: left;
-    padding-left: 50px; /* Adjust spacing from the left */
 }
 
 /* Style the text overlay */
