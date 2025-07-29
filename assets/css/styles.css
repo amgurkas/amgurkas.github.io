@@ -123,7 +123,7 @@ h1, h2 {
 
 /* Project image inside project cards */
 .project-image {
-  max-width: 75%;             /* Restrict image width to 75% of container */
+  max-width: 60%;             /* Restrict image width to 60% of container */
   height: auto;               /* Keep aspect ratio */
   border-radius: 8px;         /* Rounded corners */
   margin: 10px 0 20px 0;      /* Top 10px, bottom 20px space to separate from link */
