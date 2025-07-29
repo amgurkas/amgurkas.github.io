@@ -24,6 +24,7 @@
   text-shadow: 2px 2px 8px rgba(0,0,0,0.6); /* text shadow for readability */
   max-width: calc(100% - 60px);       /* keep text within container */
   box-sizing: border-box;
+  overflow-wrap: break-word;          /* Ensures long words wrap within banner */
 }
 
 /* Banner heading */
@@ -32,12 +33,14 @@
   font-weight: bold;
   margin-bottom: 10px;
   color: white !important;
+  overflow-wrap: break-word;          /* Break long names or titles if necessary */
 }
 
 /* Banner paragraph */
 .banner-text p {
   font-size: 1.5rem;
   margin: 0;
+  overflow-wrap: break-word;          /* Prevents text from overflowing */
 }
 
 /* Responsive tweaks */
@@ -70,16 +73,19 @@ body {
   border-radius: 10px;        /* Rounded corners */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   box-sizing: border-box;     /* Include padding/borders in width */
+  overflow-wrap: break-word;  /* Allow long content to wrap */
 }
 
 /* Headers */
 h1, h2 {
   color: #0077b6;             /* Blue color for headers */
+  overflow-wrap: break-word;  /* prevent overflow from long titles */
 }
 
 /* Sections */
 .section {
   margin-bottom: 30px;        /* Space below sections */
+  overflow-wrap: break-word;  /* Prevent section content from overflowing */
 }
 
 /* Project cards */
@@ -91,6 +97,7 @@ h1, h2 {
   border-radius: 8px;         /* Rounded corners */
   box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Soft shadow */
   box-sizing: border-box;     /* Consistent box sizing */
+  overflow-wrap: break-word;  /* break word so no issues w/ overflow */
 }
 
 /* Project card heading */
@@ -98,21 +105,16 @@ h1, h2 {
   margin-top: 0;              /* Remove default top margin */
   font-size: 1.25em;          /* Larger font size */
   color: #004466;             /* Dark blue text */
+  overflow-wrap: break-word;  /* Break long titles */
 }
 
 /* Project card links */
 .project-card a {
-  display: block;             /* Make link a block so it starts on new line */
-  color: #007acc;             /* Link color */
-  text-decoration: none;      /* Remove underline */
-  margin-top: 20px;           /* Space above link to separate from image */
   display: inline-block;
   margin-top: 15px;
-}
-
-.project-card a {
-  display: inline-block;
-  margin-top: 15px;
+  color: #007acc;
+  text-decoration: none;
+  overflow-wrap: break-word;  /* ensure long URLs or filenames break properly */
 }
 
 /* Hover effect for links */
@@ -139,6 +141,7 @@ h1, h2 {
   text-decoration: none;      /* Remove underline */
   border-radius: 5px;         /* Rounded corners */
   box-sizing: border-box;     /* Include padding/border in width */
+  overflow-wrap: break-word;  /* wrap text in button (mobile safe) */
 }
 
 .btn:hover {
@@ -153,6 +156,7 @@ footer {
   color: white;               /* White text */
   margin-top: 20px;           /* Space above footer */
   box-sizing: border-box;     /* Include padding/border */
+  overflow-wrap: break-word;  /* wrap if there is long email */
 }
 
 /* Contact form inputs and textarea */
@@ -163,6 +167,7 @@ footer {
   border: 1px solid #ddd;    /* Light gray border */
   border-radius: 5px;        /* Rounded corners */
   box-sizing: border-box;    /* Include padding/border */
+  overflow-wrap: break-word; /* wrap long text inside input */
 }
 
 /* Contact form submit button */
@@ -174,6 +179,7 @@ footer {
   border-radius: 5px;        /* Rounded corners */
   cursor: pointer;           /* Pointer cursor */
   box-sizing: border-box;    /* Include padding */
+  overflow-wrap: break-word; /* Allow button text to wrap if necessary */
 }
 
 .contact-form button:hover {
