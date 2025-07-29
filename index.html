@@ -1,70 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alyssa Gurkas ePortfolio</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alyssa Gurkas ePortfolio</title>
+  <link rel="stylesheet" href="assets/css/styles.css"> <!-- Link to your external stylesheet -->
 </head>
 <body>
 
+<!-- Banner section starts -->
 <div class="banner-wrapper">
-  <img src="assets/images/lol_banner_eportfolio.jpeg" alt="Banner image" class="banner-img">
+  <!-- img path is included as background in CSS -->
+
+  <!-- This text overlayed directly onto the background image -->
   <div class="banner-text">
     <h1>Alyssa Gurkas</h1>
     <p>Data Scientist | Environmental Strategist | Creative Problem Solver</p>
   </div>
 </div>
+<!-- Banner section ends -->
 
-    <div class="container">
-        
-        <div class="section">
-            <h2>Hi - I'm Alyssa Gurkas</h2>
-            <p> a data science professional with five years of public sector experience, where I've worked on everything from data analytics and business intelligence to organizational development and regulatory work. I have a strong foundation in data science, strategic planning, and a passion for lifelong learning. I thrive in team-oriented environments where problem-solving and driving change are central. I'd love to connect with others who are passionate about all things data or clean energy, climate solutions, hackathons, and open source/inner source initiatives. Feel free to reach out! </p>
-            <a href="AlyssaGurkasResume.pdf" class="btn" download>Download Resume</a>
-        </div>
+<!-- Main content container starts -->
+<div class="container">
 
-       <div class="section">
+  <!-- About Me Section -->
+  <div class="section">
+    <h2>Hi - I'm Alyssa Gurkas</h2>
+    <p>
+      A data science professional with five years of public sector experience...
+    </p>
+    <a href="AlyssaGurkasResume.pdf" class="btn" download>Download Resume</a>
+  </div>
+
+  <!-- Projects Section -->
+  <div class="section">
     <h2>Projects</h2>
 
     <div class="project-card">
-        <h3>Sentiment Analysis of Tweets</h3>
-        <p>A quick exercise to assess the sentiment of tweets that contain the term "tariff" in the past seven days.</p>
-        <p><strong>Tools:</strong> R, Hugging Face Models, tidyverse, ggplot, sentimentr</p>
-        <a href="https://rpubs.com/agurkas/sentiment-analysis-tweets" target="_blank">View Post</a>
+      <h3>Sentiment Analysis of Tweets</h3>
+      <p>A quick exercise to assess the sentiment of tweets...</p>
+      <p><strong>Tools:</strong> R, Hugging Face Models, tidyverse, etc.</p>
+      <a href="https://rpubs.com/agurkas/sentiment-analysis-tweets" target="_blank">View Post</a>
     </div>
 
     <div class="project-card">
-        <h3>Time Series Plot</h3>
-        <p>This post walks through how to create an animated graph using NBA stats.</p>
-        <p><strong>Tools:</strong> R, tidyverse,gifski,gganimate</p>
-        <a href="https://rpubs.com/agurkas/animated-plot" target="_blank">View Post</a>
+      <h3>Time Series Plot</h3>
+      <p>This post walks through how to create an animated graph using NBA stats.</p>
+      <p><strong>Tools:</strong> R, tidyverse, gifski, gganimate</p>
+      <a href="https://rpubs.com/agurkas/animated-plot" target="_blank">View Post</a>
     </div>
 
     <div class="project-card">
-        <h3>Tidying and Transforming Data</h3>
-        <p>This exercise shows how to tidy and transform messy data to compare the on-time flight performance of two airlines.</p>
-        <p><strong>Tools:</strong> R, prophet, forecast, ggplot2</p>
-         <img src="assets/images/delay_rate_airline.png" alt="Flight Delay Rate by City and Airline" class="project-image">
-        <a href="https://rpubs.com/agurkas/data-607-week4" target="_blank">View Post</a>
+      <h3>Tidying and Transforming Data</h3>
+      <p>This exercise shows how to tidy and transform messy data...</p>
+      <p><strong>Tools:</strong> R, prophet, forecast, ggplot2</p>
+      <img src="assets/images/delay_rate_airline.png" alt="Flight Delay Rate by City and Airline" class="project-image">
+      <a href="https://rpubs.com/agurkas/data-607-week4" target="_blank">View Post</a>
     </div>
+  </div>
+
+  <!-- Contact Form Section -->
+  <div class="section">
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Insert Name" required>
+      <input type="email" placeholder="Insert Email" required>
+      <textarea placeholder="Reach Out!" rows="5" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
 </div>
 
-        <div class="section">
-            <h2>Contact Me</h2>
-            <form class="contact-form">
-                <input type="text" placeholder="Insert Name" required>
-                <input type="email" placeholder="Insert Email" required>
-                <textarea placeholder="Reach Out!" rows="5" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-
-    </div>
-
-    <footer>
-        <p>© 2025 Alyssa Gurkas | <a href="mailto:gurkasalyssa@gmail.com.com" style="color: #80d4ff;">Email Me</a></p>
-    </footer>
+<!-- Footer -->
+<footer>
+  <p>© 2025 Alyssa Gurkas |
+    <a href="mailto:gurkasalyssa@gmail.com" style="color: #80d4ff;">Email Me</a>
+  </p>
+</footer>
 
 </body>
 </html>
