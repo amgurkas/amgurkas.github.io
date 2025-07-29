@@ -89,14 +89,17 @@ h1, h2 {
 
 /* Project cards */
 .project-card {
-  background-color: #f9f9f9;  /* Light gray background */
-  border-left: 4px solid #80d4ff; /* Blue left border */
-  padding: 1em;               /* Inner padding */
-  margin-bottom: 1.5em;       /* Space below project cards */
-  border-radius: 8px;         /* Rounded corners */
+  background-color: #f9f9f9;            /* Light gray background */
+  border-left: 4px solid #80d4ff;      /* Blue left border */
+  padding: 1em;                        /* Inner padding */
+  margin-bottom: 1.5em;                /* Space below project cards */
+  border-radius: 8px;                  /* Rounded corners */
   box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Soft shadow */
-  box-sizing: border-box;     /* Consistent box sizing */
-  overflow-wrap: break-word;  /* break word so no issues w/ overflow */
+  box-sizing: border-box;              /* Consistent box sizing */
+  overflow-wrap: break-word;           /* Break words so no overflow */
+  display: flex;                       /* Use flexbox for layout */
+  flex-wrap: wrap;                    /* Allow wrapping on narrow screens */
+  align-items: flex-start;            /* Align items at the top */
 }
 
 /* Project card heading */
@@ -122,13 +125,20 @@ h1, h2 {
 }
 
 /* Project image inside project cards */
-.project-image {
-  max-width: 60%;             /* Restrict image width to 60% of container */
-  height: auto;               /* Keep aspect ratio */
-  border-radius: 8px;         /* Rounded corners */
-  margin: 10px 0 20px 0;      /* Top 10px, bottom 20px space to separate from link */
-  padding-left: 10px;         /* Space from left edge */
-  display: block;             /* Ensure image behaves like block element */
+.project-card .project-image {
+  flex: 0 0 40%;                      /* Image fixed at ~40% width */
+  max-width: 40%;                    /* Maximum width 40% */
+  height: auto;                      /* Maintain aspect ratio */
+  border-radius: 8px;                /* Rounded corners */
+  margin: 0 20px 20px 0;             /* Right and bottom margin for spacing */
+  padding-left: 0;                   /* Remove padding-left as margin is used */
+  display: block;                    /* Block-level for image */
+}
+
+/* Text content inside project cards (everything except image) */
+.project-card > *:not(.project-image) {
+  flex: 1 1 55%;                    /* Take remaining space, min 55% */
+  min-width: 250px;                 /* Prevent text getting too narrow */
 }
 
 /* Buttons */
