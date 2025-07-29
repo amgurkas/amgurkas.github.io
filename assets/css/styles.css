@@ -1,17 +1,17 @@
-/* Banner Formatting*/
+/* Banner formatting */
 .banner-wrapper {
-  position: relative;                   /* positioning context */
-  width: 80%;                          /* match container width */
-  max-width: 1200px;                   /* max width */
-  margin: 20px auto;                   /* center horizontally */
-  border-radius: 12px;                 /* rounded corners */
-  overflow: hidden;                    /* clip overflow */
-  box-sizing: border-box;              /* include padding/border in width */
-  background-image: url('../images/lol_banner_eportfolio.jpeg'); /* banner image path */
-  background-repeat: no-repeat;        /* no repeat */
-  background-position: center top;     /* top center */
-  background-size: contain;            /* scale image to fit inside container without cropping */
-  padding-top: 30%;                    /* creates responsive height based on width (adjust %) */
+  position: relative;                   /* For absolutely positioned children */
+  width: 80%;                           /* Match container width */
+  max-width: 1200px;
+  margin: 20px auto;
+  border-radius: 12px;                 /* Rounded corners */
+  overflow: hidden;                    /* Clips overflow (enforces rounded corners) */
+  box-sizing: border-box;
+  background-image: url('../images/lol_banner_eportfolio.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;         /* Center both horizontal and vertical */
+  background-size: cover;              /* COVER allows image to fill and follow radius */
+  padding-top: 25%;                    /* Responsive aspect ratio */
 }
 
 /* Banner text */
@@ -106,6 +106,13 @@ h1, h2 {
   color: #007acc;             /* Link color */
   text-decoration: none;      /* Remove underline */
   margin-top: 20px;           /* Space above link to separate from image */
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 15px;
 }
 
 /* Hover effect for links */
