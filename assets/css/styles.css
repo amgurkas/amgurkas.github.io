@@ -11,7 +11,7 @@
   background-repeat: no-repeat;
   background-position: center;         /* Center both horizontal and vertical */
   background-size: cover;              /* COVER allows image to fill and follow radius */
-  padding-top: 25%;                    /* Responsive aspect ratio */
+  padding-top: 30%;                    /* Responsive aspect ratio */
 }
 
 /* Banner text */
