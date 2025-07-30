@@ -105,10 +105,10 @@ h1, h2 {
 
 /* Project image */
 .project-image {
-  flex: 0 0 40%;       /* gives image up to 40% of row width */
-  max-width: 320px;    /* increased from 200px */
-  height: auto;
-  border-radius: 8px;
+  flex: 0 0 60%;       /* gives image up to 60% of row width */
+  max-width: 400px;    /* max image width size */
+  height: auto;        /* auto height for flexibility of screensize */
+  border-radius: 8px;  /* rounded border */
   display: block;
 }
 
