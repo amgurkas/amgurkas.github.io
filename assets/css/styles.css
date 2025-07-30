@@ -11,15 +11,15 @@
   background-repeat: no-repeat;
   background-position: center;         /* Center both horizontal and vertical */
   background-size: cover;              /* COVER allows image to fill and follow radius */
-  padding-top: 30%;                    /* Responsive aspect ratio */
+  padding-top: 35%;                    /* Responsive aspect ratio */
 }
 
 /* Banner text */
 .banner-text {
   position: absolute;                  /* overlay text on banner */
-  top: 25%;                           /* vertical center */
+  top: 20%;                           /* vertical center */
   left: 30px;                        /* left padding */
-  transform: translateY(-63%);       /* vertical alignment */
+  transform: translateY(-65%);       /* vertical alignment */
   color: white !important;            /* white text */
   text-shadow: 2px 2px 8px rgba(0,0,0,0.6); /* text shadow for readability */
   max-width: calc(100% - 60px);       /* keep text within container */
