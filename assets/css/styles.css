@@ -17,7 +17,7 @@
 /* Banner text */
 .banner-text {
   position: absolute;                  /* overlay text on banner */
-  top: 50%;                           /* vertical center */
+  top: 35%;                           /* vertical center */
   left: 30px;                        /* left padding */
   transform: translateY(-50%);       /* vertical alignment */
   color: white !important;            /* white text */
